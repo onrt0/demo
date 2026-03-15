@@ -1,5 +1,18 @@
-hello
-666
-master
-branch
-这是新功能
+git clone [address]
+git init #创建本地代码仓库
+git add a.txt #放入暂存区
+git add . #所有文件都放入暂存区
+git commit -m "备注信息"
+git log
+git log --stat #查看每次提交修改了哪些文件
+git diff [commit id] #查看某次提交修改了什么内容
+git reset --hard [commit id] #永久性回退
+git checkout [commit id] #临时跳转查看，若在此提交新代码，需合并或创建分支否则丢失
+git branch #查看所有分支
+git checkout -b develop #创建develop分支，并切换到develop分支
+###合并分支
+git add .
+git commit -m "备注信息"
+git checkout master #切换到master分支
+git merge develop
+
