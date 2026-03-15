@@ -17,5 +17,10 @@ git commit -m "备注信息"
 git checkout master #切换到master分支
 git merge develop
 git push origin main #将先前的本地库origin更新到GitHub上的main分支中
-
-
+# 删除多余的远程别名
+git remote remove demo
+# 确认清理结果
+git remote -v
+git remote set-url new [new address] #修改新地址
+git pull origin main #若无相关历史，则git pull origin main --allow-unrelated-histories
+git log --oneline #查看本地提交记录
