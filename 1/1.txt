@@ -1,5 +1,6 @@
 git clone [address]
 git init #创建本地代码仓库
+git remote add origin [address] #连接远程库和本地库
 git add a.txt #放入暂存区
 git add . #所有文件都放入暂存区
 git commit -m "备注信息"
@@ -15,4 +16,6 @@ git add .
 git commit -m "备注信息"
 git checkout master #切换到master分支
 git merge develop
+git push origin main #将先前的本地库origin更新到GitHub上的main分支中
+
 
