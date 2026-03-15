@@ -25,3 +25,8 @@ git remote set-url new [new address] #修改新地址
 git pull origin main #若无相关历史，则git pull origin main --allow-unrelated-histories
 git log --oneline #查看本地提交记录
 ---
+本地分支名要和默认分支相同，不然直接使用git pull origin main报错
+远程仓库为main分支，本地分支名也需要修改为main：
+git branch -m master main #修改分支名
+或者push时加上：
+git push origin master:main #本地为master分支，远程为main分支
